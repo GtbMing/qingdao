@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+</head>
+<body>
+	<ul>
+		<li id="lis1">111</li>
+		<li class="lis2">222</li>
+		<li class="lis2">333</li>
+		<li>444</li>
+		<li>555</li>
+	</ul>
+	<ul>
+		<li>666</li>
+	</ul>
+	<div>
+		<p>
+			<span>span666</span>
+		</p>
+		<span>sp444</span>
+		<span>sp333</span>
+		<div>
+			<span>span888</span>
+		</div>
+		<span>sp222</span>
+		<span>sp111</span>
+		<div>
+			<span>span555</span>
+			<div>
+				<span>span777</span>
+			</div>
+		</div>
+		<div>我是div222</div>
+	</div>
+	<div class="box">
+
+		<div>你是div111</div>
+		<div>你是div222</div>
+		<p>你是P标签</p>
+		<div>你是div333</div>
+		<div>你是div444</div>
+		<div>你是div555</div>
+		<div>你是div666</div>
+		<p>你是P标签</p>
+	</div>
+	
+</body>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	// $('#lis1').css({background:'red',color:'white'})
+	// $('.lis2').css({background:'green',color:'#fff'})
+	// $('div').css({background:'blue',color:'#fff'})
+	// $('*').css({background:'red'})
+	// $('li,div').css({background:'blue',color:'red'})
+	// $('div span').css({background:'blue',color:'red'})
+	// $('div>span').css({background:'blue',color:'red'})
+	// $('div span+div').css({background:'blue',color:'red'})
+	// $('div span~div').css({background:'blue',color:'red'})
+	// $('ul li:first').css({background:'blue',color:'red'})
+	// $('ul li:last').css({background:'blue',color:'red'})
+	// $('ul li:not(.lis2)').css({background:'blue',color:'red'})
+	// $('ul li:even').css({background:'blue',color:'red'})
+	// $('ul li:odd').css({background:'blue',color:'red'})
+	// $('ul li:eq(0)').css({background:'blue',color:'red'})
+	// $('ul li').eq(0).css({background:'blue',color:'red'})
+	// $('ul li:gt(1)').css({background:'blue',color:'red'})
+	// $('ul li:lt(1)').css({background:'blue',color:'red'})
+	// $('.box div:nth-child(1)').css({background:'blue',color:'red'})
+	// $('.box div:nth-child(3)').css({background:'blue',color:'red'})
+	// $('.box div:first-child').css({background:'blue',color:'red'})
+	$('div:has(p) div').css({background:'blue',color:'red'})
+
+</script>
+</html>
